@@ -891,10 +891,14 @@
     <Content Include="ckeditor\skins\v2\skin.js" />
     <Content Include="ckeditor\skins\v2\templates.css" />
     <Content Include="ckeditor\themes\default\theme.js" />
+    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="pic\logo\emdep.jpg" />
     <Content Include="Qldoctin\CMS\Admin\AdminControl.ascx" />
     <Content Include="Qldoctin\CMS\Admin\css\add.jpg" />
     <Content Include="Qldoctin\CMS\Admin\css\check.jpg" />
+    <Content Include="Qldoctin\CMS\Admin\css\cssLogin.css" />
     <Content Include="Qldoctin\CMS\Admin\css\delete.jpg" />
     <Content Include="Qldoctin\CMS\Admin\css\edit.jpg" />
     <Content Include="Qldoctin\CMS\Admin\css\expend.jpg" />
@@ -902,8 +906,23 @@
     <Content Include="Qldoctin\CMS\Admin\css\unCheck.jpg" />
     <Content Include="Qldoctin\CMS\Admin\css\view.png" />
     <Content Include="Qldoctin\CMS\Admin\Js\jquery-3.5.1.min.js" />
+    <Content Include="Qldoctin\CMS\Admin\Menu\Ajax\Menu.aspx" />
     <Content Include="Qldoctin\CMS\Admin\Menu\MenuLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\Menu\MeNu_HienThiControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\Menu\MeNu_ThemMoiControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanCaoLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\Ajax\QuangCao.aspx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCaoLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCao_HienThiControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCao_ThemMoiControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\Ajax\NhomQuangCao.aspx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCaoLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCao_HienThiControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCao_ThemMoiControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\TaiKhoan\Ajax\TaiKhoan.aspx" />
     <Content Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoanLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoan_HienThiControl.ascx" />
+    <Content Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoan_ThemMoiControl.ascx" />
     <Content Include="Qldoctin\CMS\Admin\Tin\QuanLyTheLoai\Ajax\TheLoai.aspx" />
     <Content Include="Qldoctin\CMS\Admin\Tin\QuanLyTheLoai\TheLoaiLoadControl.ascx" />
     <Content Include="Qldoctin\CMS\Admin\Tin\QuanLyTheLoai\TheLoai_HienThiControl.ascx" />
@@ -913,6 +932,15 @@
     <Content Include="Qldoctin\CMS\Admin\Tin\QuanLyTin\Tin_HienThiControl.ascx" />
     <Content Include="Qldoctin\CMS\Admin\Tin\QuanLyTin\Tin_ThemMoiControl.ascx" />
     <Content Include="Qldoctin\CMS\Admin\Tin\TinLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Display\DisplayLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Display\ThanhVien\DangKy.ascx" />
+    <Content Include="Qldoctin\CMS\Display\ThanhVien\DangNhap.ascx" />
+    <Content Include="Qldoctin\CMS\Display\ThanhVien\ThanhVienLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Display\TinTuc\ChiTietTinTuc.ascx" />
+    <Content Include="Qldoctin\CMS\Display\TinTuc\DanhSachCacTinTuc.ascx" />
+    <Content Include="Qldoctin\CMS\Display\TinTuc\TinTucLoadControl.ascx" />
+    <Content Include="Qldoctin\CMS\Display\TinTuc\TrangChuModulTinTuc.ascx" />
+    <Content Include="Qldoctin\CMS\Display\TrangChu\TrangChuLoadControl.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -923,10 +951,30 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qldoctin\Add_Code\Database\DangKi.cs" />
+    <Compile Include="Qldoctin\Add_Code\Database\MaHoa.cs" />
+    <Compile Include="Qldoctin\Add_Code\Database\MN.cs" />
+    <Compile Include="Qldoctin\Add_Code\Database\NhomQuanCao.cs" />
+    <Compile Include="Qldoctin\Add_Code\Database\QuanCao.cs" />
+    <Compile Include="Qldoctin\Add_Code\Database\Quyen.cs" />
     <Compile Include="Qldoctin\Add_Code\Database\SQlDatabase.cs" />
     <Compile Include="Qldoctin\Add_Code\Database\TheLoai.cs" />
     <Compile Include="Qldoctin\Add_Code\Database\Tin.cs" />
@@ -937,6 +985,13 @@
     <Compile Include="Qldoctin\CMS\Admin\AdminControl.ascx.designer.cs">
       <DependentUpon>AdminControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\Menu\Ajax\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\Menu\Ajax\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Qldoctin\CMS\Admin\Menu\MenuLoadControl.ascx.cs">
       <DependentUpon>MenuLoadControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -944,12 +999,110 @@
     <Compile Include="Qldoctin\CMS\Admin\Menu\MenuLoadControl.ascx.designer.cs">
       <DependentUpon>MenuLoadControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\Menu\MeNu_HienThiControl.ascx.cs">
+      <DependentUpon>MeNu_HienThiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\Menu\MeNu_HienThiControl.ascx.designer.cs">
+      <DependentUpon>MeNu_HienThiControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\Menu\MeNu_ThemMoiControl.ascx.cs">
+      <DependentUpon>MeNu_ThemMoiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\Menu\MeNu_ThemMoiControl.ascx.designer.cs">
+      <DependentUpon>MeNu_ThemMoiControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanCaoLoadControl.ascx.cs">
+      <DependentUpon>QuanCaoLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanCaoLoadControl.ascx.designer.cs">
+      <DependentUpon>QuanCaoLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\Ajax\QuangCao.aspx.cs">
+      <DependentUpon>QuangCao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\Ajax\QuangCao.aspx.designer.cs">
+      <DependentUpon>QuangCao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCaoLoadControl.ascx.cs">
+      <DependentUpon>DanhSachQuanCaoLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCaoLoadControl.ascx.designer.cs">
+      <DependentUpon>DanhSachQuanCaoLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCao_HienThiControl.ascx.cs">
+      <DependentUpon>DanhSachQuanCao_HienThiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCao_HienThiControl.ascx.designer.cs">
+      <DependentUpon>DanhSachQuanCao_HienThiControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCao_ThemMoiControl.ascx.cs">
+      <DependentUpon>DanhSachQuanCao_ThemMoiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyDanhSachQuanCao\DanhSachQuanCao_ThemMoiControl.ascx.designer.cs">
+      <DependentUpon>DanhSachQuanCao_ThemMoiControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\Ajax\NhomQuangCao.aspx.cs">
+      <DependentUpon>NhomQuangCao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\Ajax\NhomQuangCao.aspx.designer.cs">
+      <DependentUpon>NhomQuangCao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCaoLoadControl.ascx.cs">
+      <DependentUpon>NhomQuanCaoLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCaoLoadControl.ascx.designer.cs">
+      <DependentUpon>NhomQuanCaoLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCao_HienThiControl.ascx.cs">
+      <DependentUpon>NhomQuanCao_HienThiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCao_HienThiControl.ascx.designer.cs">
+      <DependentUpon>NhomQuanCao_HienThiControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCao_ThemMoiControl.ascx.cs">
+      <DependentUpon>NhomQuanCao_ThemMoiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\QuanCao\QuanLyNhomQuanCao\NhomQuanCao_ThemMoiControl.ascx.designer.cs">
+      <DependentUpon>NhomQuanCao_ThemMoiControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\Ajax\TaiKhoan.aspx.cs">
+      <DependentUpon>TaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\Ajax\TaiKhoan.aspx.designer.cs">
+      <DependentUpon>TaiKhoan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoanLoadControl.ascx.cs">
       <DependentUpon>TaiKhoanLoadControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoanLoadControl.ascx.designer.cs">
       <DependentUpon>TaiKhoanLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoan_HienThiControl.ascx.cs">
+      <DependentUpon>TaiKhoan_HienThiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoan_HienThiControl.ascx.designer.cs">
+      <DependentUpon>TaiKhoan_HienThiControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoan_ThemMoiControl.ascx.cs">
+      <DependentUpon>TaiKhoan_ThemMoiControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Admin\TaiKhoan\TaiKhoan_ThemMoiControl.ascx.designer.cs">
+      <DependentUpon>TaiKhoan_ThemMoiControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Qldoctin\CMS\Admin\Tin\QuanLyTheLoai\Ajax\TheLoai.aspx.cs">
       <DependentUpon>TheLoai.aspx</DependentUpon>
@@ -1014,6 +1167,68 @@
     <Compile Include="Qldoctin\CMS\Admin\Tin\TinLoadControl.ascx.designer.cs">
       <DependentUpon>TinLoadControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Qldoctin\CMS\Display\DisplayLoadControl.ascx.cs">
+      <DependentUpon>DisplayLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\DisplayLoadControl.ascx.designer.cs">
+      <DependentUpon>DisplayLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\ThanhVien\DangKy.ascx.cs">
+      <DependentUpon>DangKy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\ThanhVien\DangKy.ascx.designer.cs">
+      <DependentUpon>DangKy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\ThanhVien\DangNhap.ascx.cs">
+      <DependentUpon>DangNhap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\ThanhVien\DangNhap.ascx.designer.cs">
+      <DependentUpon>DangNhap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\ThanhVien\ThanhVienLoadControl.ascx.cs">
+      <DependentUpon>ThanhVienLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\ThanhVien\ThanhVienLoadControl.ascx.designer.cs">
+      <DependentUpon>ThanhVienLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\ChiTietTinTuc.ascx.cs">
+      <DependentUpon>ChiTietTinTuc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\ChiTietTinTuc.ascx.designer.cs">
+      <DependentUpon>ChiTietTinTuc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\DanhSachCacTinTuc.ascx.cs">
+      <DependentUpon>DanhSachCacTinTuc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\DanhSachCacTinTuc.ascx.designer.cs">
+      <DependentUpon>DanhSachCacTinTuc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\TinTucLoadControl.ascx.cs">
+      <DependentUpon>TinTucLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\TinTucLoadControl.ascx.designer.cs">
+      <DependentUpon>TinTucLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\TrangChuModulTinTuc.ascx.cs">
+      <DependentUpon>TrangChuModulTinTuc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TinTuc\TrangChuModulTinTuc.ascx.designer.cs">
+      <DependentUpon>TrangChuModulTinTuc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TrangChu\TrangChuLoadControl.ascx.cs">
+      <DependentUpon>TrangChuLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qldoctin\CMS\Display\TrangChu\TrangChuLoadControl.ascx.designer.cs">
+      <DependentUpon>TrangChuLoadControl.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ckeditor\.htaccess" />
@@ -1031,6 +1246,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="pic\anhtintuc\" />
+    <Folder Include="pic\QuangCao\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

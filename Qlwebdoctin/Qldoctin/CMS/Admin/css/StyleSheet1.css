@@ -21,9 +21,9 @@ a {
 
     #header .logo {
         float: left;
-        line-height: 80px
+        line-height: 80px;
     }
-
+        
     #header .accountMenu {
         float: right;
         line-height: 80px
@@ -146,7 +146,7 @@ a {
 }
 
 .formthemmoi input[type=text],
-.formthemmoi select, 
+.formthemmoi select 
 {
     border: solid 1px #dfdfdf;
     padding: 5px;
@@ -183,6 +183,32 @@ table.tbTheLoai .cotthutu {
         width: 60px;
         text-align:center
 }
+/*Css cho form danh sách tài khoản*/
+    table.tbTheLoai .cotemail {
+        width: 120px;
+        text-align: center
+    }
+
+    table.tbTheLoai .cotdiachi {
+        width: 120px;
+        text-align: center
+    }
+
+    table.tbTheLoai .cothoten {
+        width: 120px;
+        text-align: center
+    }
+
+    table.tbTheLoai .cotngaysinh {
+        width: 120px;
+        text-align: center
+    }
+
+    table.tbTheLoai .cotgioitinh {
+        width: 70px;
+        text-align: center
+    }
+   
 table.tbTheLoai .cotcongcu {
         width: 200px;
         text-align:right     
@@ -197,6 +223,7 @@ table.tbTheLoai .cotcongcu a.theloaicon {
     table.tbTheLoai .cotcongcu a.xoa {
         background-image: url(delete.jpg)
     }
+
 .cotphai .head .themmoi {
     display: inline-block;
     background: url(add.jpg) no-repeat top left;
@@ -264,3 +291,88 @@ table.tbTintuc .cotcongcu a.sua {
 table.tbTintuc .cotcongcu a.xoa {
         background-image: url(delete.jpg)
     }
+/*Css hiển thị nhóm quảng cáo*/
+table.tbNhomQuangCao {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #dfdfdf
+}
+
+    table.tbNhomQuangCao th,
+    table.tbNhomQuangCao td {
+        padding: 5px;
+        border: 1px solid #dfdfdf
+    }
+
+    table.tbNhomQuangCao .cotMa {
+        width: 40px;
+        text-align: center
+    }
+
+    table.tbNhomQuangCao .cotAnh {
+        width: 120px;
+        text-align: center
+    }
+
+    table.tbNhomQuangCao .cotThuTu {
+        width: 70px;
+        text-align: center
+    }
+
+    table.tbNhomQuangCao .cotCongCu {
+        width: 120px;
+        text-align: right
+    }
+
+        table.tbNhomQuangCao .cotCongCu a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-position: center;
+            background-repeat: no-repeat
+        }
+
+            table.tbNhomQuangCao .cotCongCu a.dmcon {
+                background-image: url(expend.jpg)
+            }
+
+            table.tbNhomQuangCao .cotCongCu a.sua {
+                background-image: url(edit.jpg)
+            }
+
+            table.tbNhomQuangCao .cotCongCu a.xoa {
+                background-image: url(delete.jpg)
+            }
+
+    table.tbNhomQuangCao .cotAnh {
+        position: relative;
+        z-index: 1
+    }
+
+        table.tbNhomQuangCao .cotAnh .anhDaiDien {
+            max-width: 40px;
+            max-height: 40px
+        }
+
+        table.tbNhomQuangCao .cotAnh .anhDaiDienHover {
+            max-width: 200px;
+            max-height: 200px;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 80px
+        }
+
+        table.tbNhomQuangCao .cotAnh:hover .anhDaiDienHover {
+            display: inline-block
+        }
+
+.cotphai .head .btThemMoi {
+    display: inline-block;
+    background: url(add.jpg) no-repeat top left;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #0026ff
+}

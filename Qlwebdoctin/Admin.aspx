@@ -17,10 +17,11 @@
             <div id ="header">
                 <div class="container">
                   <div class="logo">
-                    Chèn logo
+                     <a> <img src="pic/logo/emdep.jpg" /></a>
                   </div>
                   <div class="accountMenu">
-                    Menu tài khoản
+                    Xin chào :<asp:Literal ID="ltrtendangnhap" runat="server"></asp:Literal>! <asp:LinkButton ID="lbtdangxuat" runat="server" OnClick="lbtdangxuat_Click">
+                        Đăng Xuất</asp:LinkButton>
                   </div>
                 </div>
             </div>
@@ -28,8 +29,9 @@
           <div class="menuchinh">
               <div class="container">
                   <ul>
-                  <li><a href="Admin.aspx" title="Trang chủ">Trang Chủ</a></li>
-                  <li><a class="<%=DanhDau("tin") %>" href="Admin.aspx?modul=tin" title="Tin">Tin</a></li>
+                  
+                  <li><a class="<%=DanhDau("tin") %>" href="Admin.aspx?modul=tin" title="Tin">Tin Tức</a></li>
+                   <li><a class="<%=DanhDau("quangcao") %>" href="Admin.aspx?modul=quangcao" title="QuanCao">Quản Cáo</a></li>
                   <li><a class="<%=DanhDau("taikhoan") %>" href="Admin.aspx?modul=taikhoan" title="Tài khoản">Tài Khoản</a></li>
                   <li><a class="<%=DanhDau("menu") %>" href="Admin.aspx?modul=menu" title="Menu">Menu</a></li>
               </ul>

@@ -22,6 +22,9 @@ namespace Qlwebdoctin.Qldoctin.CMS.Admin.Tin
                 case "danhsachtin":
                     plTinLoadControl.Controls.Add(LoadControl("QuanLyTin/TinLoadControl.ascx"));
                     break;
+                default:
+                    plTinLoadControl.Controls.Add(LoadControl("QuanLyTheLoai/TheLoaiLoadControl.ascx"));
+                    break; 
             }
         }
         protected string DanhDau(string tenModul, string tenModulPhu, string tenThaoTac)

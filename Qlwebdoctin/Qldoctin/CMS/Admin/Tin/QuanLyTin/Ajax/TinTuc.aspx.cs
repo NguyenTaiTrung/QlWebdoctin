@@ -12,6 +12,18 @@ namespace Qlwebdoctin.Qldoctin.CMS.Admin.Tin.QuanLyTin.Ajax
         private string thaotac = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Kiểm tra nếu đã đăng nhập thì mới cho vào trang này
+            if (Session["DangNhap"] != null && Session["DangNhap"].ToString() == "1")
+            {
+                //Đã đăng nhâp
+
+            }
+            else
+            {
+                //chưa đăng nhập--->return để dừng không cho thực hiện các câu lẹnh ở dưới
+                return;
+
+            }
             if (Request.Params["ThaoTac"] != null)
             {
                 thaotac = Request.Params["thaotac"];

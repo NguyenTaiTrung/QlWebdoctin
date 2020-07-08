@@ -24,6 +24,24 @@ namespace Qlwebdoctin
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// ltrtendangnhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrtendangnhap;
+
+        /// <summary>
+        /// lbtdangxuat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtdangxuat;
+
+        /// <summary>
         /// AdminControl control.
         /// </summary>
         /// <remarks>

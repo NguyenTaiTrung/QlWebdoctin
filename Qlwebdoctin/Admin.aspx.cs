@@ -11,6 +11,22 @@ namespace Qlwebdoctin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Kiểm tra nếu đã đăng nhập thì mới cho vào trang này
+            if(Session["DangNhap"]!=null &&Session["DangNhap"].ToString()=="1")
+            {
+                //Đã đăng nhâp
+
+            }    
+            else
+            {
+                //chưa đăng nhập
+                Response.Redirect("/Login.aspx");
+
+            }
+            if (!IsPostBack)
+            {
+                ltrtendangnhap.Text = Session["TenDangNhap"].ToString();
+            }
 
         }
         protected string DanhDau(string tenModul)
@@ -24,6 +40,14 @@ namespace Qlwebdoctin
                 s = "current";
 
             return s;
+        }
+
+        protected void lbtdangxuat_Click(object sender, EventArgs e)
+        {
+            //Xóa các session đã lưu và đẩy về trang login
+            Session["DangNhap"] = "";
+            Session["TenDangNhap"] = "";
+            Response.Redirect("/Login.aspx");
         }
     }
 }

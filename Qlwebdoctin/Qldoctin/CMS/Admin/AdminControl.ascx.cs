@@ -21,11 +21,17 @@ namespace Qlwebdoctin.Qldoctin.CMS.Admin
                 case "tin":
                     pladminloadcontrol.Controls.Add(LoadControl("Tin/TinLoadControl.ascx"));
                     break;
+                case "quangcao":
+                    pladminloadcontrol.Controls.Add(LoadControl("QuanCao/QuanCaoLoadControl.ascx"));
+                    break;
                 case "taikhoan":
                     pladminloadcontrol.Controls.Add(LoadControl("TaiKhoan/TaiKhoanLoadControl.ascx"));
                     break;
                 case "menu":
                     pladminloadcontrol.Controls.Add(LoadControl("Menu/MenuLoadControl.ascx"));
+                    break;
+                default:
+                    pladminloadcontrol.Controls.Add(LoadControl("Tin/TinLoadControl.ascx"));
                     break;
             }
         }
