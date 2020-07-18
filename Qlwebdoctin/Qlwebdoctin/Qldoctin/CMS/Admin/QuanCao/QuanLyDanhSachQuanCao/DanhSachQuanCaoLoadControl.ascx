@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DanhSachQuanCaoLoadControl.ascx.cs" Inherits="Qlwebdoctin.Qldoctin.CMS.Admin.QuanCao.QuanLyDanhSachQuanCao.DanhSachQuanCaoLoadControl" %>
-<asp:PlaceHolder ID="plLoadControl" runat="server"></asp:PlaceHolder>
