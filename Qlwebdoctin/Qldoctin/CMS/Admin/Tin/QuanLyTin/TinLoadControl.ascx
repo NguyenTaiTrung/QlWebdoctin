@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TinLoadControl.ascx.cs" Inherits="Qlwebdoctin.Qldoctin.CMS.Admin.Tin.QuanLyTin.TinLoadControl" %>
-<asp:PlaceHolder ID="plLoadControl" runat="server"></asp:PlaceHolder>

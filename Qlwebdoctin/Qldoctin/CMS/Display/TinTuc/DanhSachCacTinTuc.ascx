@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DanhSachCacTinTuc.ascx.cs" Inherits="Qlwebdoctin.Qldoctin.CMS.Display.TinTuc.DanhSachCacTinTuc" %>
-Trang liệt kê danh danh cac tin trong 1 the loai
